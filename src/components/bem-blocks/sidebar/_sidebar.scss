@@ -1,0 +1,45 @@
+.sidebar {
+  height: 100vh;
+  padding: 20px 10px;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden auto;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+  &__content {
+    margin-bottom: 20px;
+  }
+  &__content--body {
+    border-bottom: 1px dashed var(--color-grey);
+  }
+  &__navlinks {
+    ul {
+      display: block;
+    }
+    a {
+      width: 100%;
+      letter-spacing: 1px;
+      opacity: 0.8;
+      padding: 10px;
+    }
+  }
+  &__content--foot {
+    display: grid;
+  }
+  &__link {
+    display: block;
+    color: var(--color-catalog);
+    padding: 10px;
+    text-transform: uppercase;
+    &:hover {
+      color: var(--color-basic);
+    }
+  }
+  &--show {
+    pointer-events: all;
+    background: #e9eff3;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}

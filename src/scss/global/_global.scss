@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1640px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.--just-space {
+  justify-content: space-between;
+}
+
+.--just-center {
+  justify-content: center;
+}
+
+.--just-end {
+  justify-content: flex-end;
+}
+
+.--align-str {
+  align-items: stretch;
+}
+
+.--align-center {
+  align-items: center;
+}
+
+.--align-end {
+  align-items: flex-end;
+}
+
+.--dir-col {
+  flex-direction: column;
+}
+
+.link {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  min-height: 100%;
+  position: relative;
+  font-family: 'TT Norms Pro', 'Comfortaa';
+  font-weight: 400;
+}
+
+body {
+  font-size: 1rem;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+// a,
+// a:link,
+// a:visited {
+//   text-decoration: none;
+// }
+
+// a:hover {
+//   text-decoration: none;
+// }
+
+ul,
+ul li {
+  list-style: none;
+}
+
+button,
+input[type='submit'] {
+  display: inline-block;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}

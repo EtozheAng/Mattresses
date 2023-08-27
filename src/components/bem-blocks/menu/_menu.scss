@@ -1,0 +1,51 @@
+.menu {
+  gap: 60px;
+  &__list {
+    display: flex;
+    gap: 60px;
+  }
+  &__link {
+    font-family: 'TT Norms Pro';
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+    text-transform: uppercase;
+    transition: all 0.2s;
+    &:hover {
+      color: var(--color-basic);
+    }
+    &:focus-visible {
+      outline: transparent;
+      transform: translateY(-10%);
+      text-decoration: underline;
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+.menu-burger {
+  &__button {
+    display: flex;
+    align-items: baseline;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 14px 25px;
+    background: rgba(35, 89, 132, 0.08);
+    color: var(--color-basic);
+  }
+  &__svg {
+    @include bg;
+    display: inline-block;
+    width: 19px;
+    height: 14px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .menu__list {
+    gap: 30px;
+  }
+}

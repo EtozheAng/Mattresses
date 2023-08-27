@@ -1,0 +1,37 @@
+<header class="header">
+  @@include('../bem-blocks/header-mobile/_header-mobile.html')
+  <div class="header-desktop">
+    <div class="header-main --align-center --just-space">
+      <div class="container">
+        <div class="header-main__inner flex --just-space --align-center">
+          @@include('../bem-blocks/logo/_logo.html')
+          @@include('../bem-blocks/search/_search.html')
+          <div class="header-main__tools flex">
+            <button class="header-main__tools-button">
+              @@include('../bem-blocks/_sprite.html',{'class':'header-main__tools-svg','id':'sprite--profile'})
+            </button>
+            <button class="header-main__tools-button">
+              @@include('../bem-blocks/_sprite.html',{'class':'header-main__tools-svg','id':'sprite--like'})
+            </button>
+            <button class="header-main__tools-button">
+              @@include('../bem-blocks/_sprite.html',{'class':'header-main__tools-svg','id':'sprite--cart'})
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-nav flex --just-space">
+        @@include('../bem-blocks/menu/_menu.html')
+        <div class="header-nav__contacts flex --align-end --dir-col">
+          <a class="header-nav__tel link" href="tel:+74957872747"
+            >+7 (495) 787-27-47</a
+          >
+          <a class="header-nav__mail link" href="mailto:info@matras.ru"
+            >info@matras.ru</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

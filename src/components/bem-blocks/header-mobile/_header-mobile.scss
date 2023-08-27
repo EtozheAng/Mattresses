@@ -1,0 +1,59 @@
+.header-mobile {
+  display: none;
+
+  &__button {
+    @include no-btn;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      transition: 0.5s;
+      background: var(--color-basic);
+    }
+    &::before {
+      transform: translateY(-10px);
+      box-shadow: 0 10px var(--color-basic);
+    }
+    &::after {
+      transform: translateY(10px);
+    }
+  }
+  &__button--active {
+    &::before {
+      transform: translateY(0px) rotate(45deg);
+      box-shadow: 0 0 var(--color-basic);
+    }
+    &::after {
+      transform: translateY(0px) rotate(-45deg);
+    }
+  }
+  &__top {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    color: #222;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 4px 10px;
+    z-index: 10;
+  }
+  @media (max-width: 1400px) {
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}

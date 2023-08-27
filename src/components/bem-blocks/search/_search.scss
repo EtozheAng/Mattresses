@@ -1,0 +1,23 @@
+.search {
+  width: 100%;
+  max-width: 978px;
+  border-radius: 10px;
+  border: 1px solid var(--color-grey);
+  padding: 16px 20px;
+  background: #fff;
+  &__input {
+    width: 100%;
+    font-family: 'TT Norms';
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    &::placeholder {
+      color: #191919;
+    }
+  }
+  &__submit {
+    @include bg;
+    width: 18px;
+    height: 18px;
+  }
+}
