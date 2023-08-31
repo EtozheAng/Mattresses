@@ -8,4 +8,5 @@
     sidebar.classList.toggle('sidebar--show')
     nav.append(menu)
   })
+  removeActiveClass(sidebar, 'sidebar--show')
 })()

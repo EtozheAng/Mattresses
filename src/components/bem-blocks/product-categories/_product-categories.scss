@@ -1,0 +1,131 @@
+.product-categories {
+  display: flex;
+  gap: 20px;
+}
+.product-category {
+  @include bg('cover');
+  overflow: hidden;
+  position: relative;
+  width: 527px;
+  height: 562px;
+  border-radius: 10px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 335px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 600px;
+    height: 600px;
+    border-radius: 600px;
+    background: rgba(233, 239, 243, 0.91);
+    transition: all 0.5s ease;
+  }
+  &:hover {
+    &::before {
+      top: 143px;
+      background: var(--color-background);
+    }
+    .product-category__content {
+      bottom: 139px;
+    }
+  }
+  &__content {
+    width: 270px;
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    transform: translate(-50%);
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  &__title {
+    font-family: 'Comfortaa';
+    font-weight: 500;
+    color: var(--color-basic);
+    font-size: 32px;
+    line-height: 147.3%;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  &__description {
+    color: #737373;
+    font-family: 'TT Norms Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163.8%;
+  }
+}
+.product-category--mattresses {
+  background-image: url('../../../img/preview/item-1.png');
+}
+.product-category--beds {
+  background-image: url('../../../img/preview/item-2.png');
+}
+.product-category--accessories {
+  background-image: url('../../../img/preview/item-3.png');
+}
+@media screen and (max-width: 992px) {
+  .product-categories {
+    flex-direction: column;
+  }
+  .product-category {
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
+    flex-basis: 100%;
+    &::before {
+      top: 55%;
+    }
+    &:hover {
+      .product-category__content {
+        bottom: 20%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-category {
+    &::before {
+      top: 30%;
+    }
+    &:hover {
+      &::before {
+        top: 30%;
+      }
+    }
+    &__title {
+      font-size: 28px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .product-category {
+    &:hover {
+      .product-category__content {
+        bottom: 35px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-category {
+    &__item {
+      &::before {
+        top: 50%;
+      }
+      &:hover {
+        &::before {
+          top: 50%;
+        }
+      }
+    }
+    &__title {
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+    &__description {
+      display: none;
+    }
+  }
+}

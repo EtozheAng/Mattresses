@@ -1,0 +1,138 @@
+$mobile-large: 182px;
+$tablet-middle: 140px;
+$button-small: 100px;
+
+.mattress-promo {
+  display: flex;
+  background-color: var(--color-background);
+  border-radius: 10px;
+  gap: 50px;
+  &__box {
+    padding: 89px 0 87px 84px;
+  }
+  &__title {
+    font-family: 'Comfortaa';
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 147.3%;
+    color: var(--color-basic);
+    margin-bottom: 37px;
+  }
+  &__text {
+    font-family: 'TT Norms Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163.8%;
+    margin-bottom: 58px;
+  }
+  &__button {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    font-family: 'TT Norms Pro';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 147.3%;
+    width: $mobile-large;
+    height: $mobile-large;
+    background-color: transparent;
+    padding: 62px 26px 50px 27px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-blackPearl);
+    transition: background-color 5s ease;
+    &:hover {
+      border-color: var(--color-basic);
+      + .mattress-promo__circle {
+        left: 0;
+        background-color: var(--color-basic);
+      }
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  &__circle {
+    display: block;
+    position: relative;
+    left: 26px;
+    z-index: 1;
+    width: $mobile-large;
+    height: $mobile-large;
+    background-color: #237284;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+  }
+  @media screen and (max-width: 1500px) {
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+    &__box {
+      padding: 30px 0 30px 50px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    &__image {
+      display: none;
+    }
+    &__box {
+      padding: 50px 45px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    &__box {
+      padding: 30px;
+    }
+    &__title {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    &__button {
+      font-size: 18px;
+      width: $tablet-middle;
+      height: $tablet-middle;
+      padding: 48px 20px 42px 21px;
+    }
+    &__circle {
+      width: $tablet-middle;
+      height: $tablet-middle;
+      left: 20px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    &__box {
+      padding: 10px;
+    }
+    &__title {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    &__button {
+      font-size: 14px;
+      width: $button-small;
+      height: $button-small;
+      padding: 30px 0;
+    }
+
+    &__circle {
+      width: $button-small;
+      height: $button-small;
+      left: 14px;
+    }
+  }
+}

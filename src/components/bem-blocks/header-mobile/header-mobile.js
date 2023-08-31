@@ -1,13 +1,8 @@
 ;(function () {
   const burger = document.querySelector('.header-mobile__button')
-  const bodyTag = document.body
-
   burger.addEventListener('click', () => {
-    if (bodyTag.style.overflow === 'hidden') {
-      bodyTag.style.overflow = ''
-    } else {
-      bodyTag.style.overflow = 'hidden'
-    }
+    document.body.classList.toggle('body-lock')
     burger.classList.toggle('header-mobile__button--active')
   })
+  removeActiveClass(burger, 'header-mobile__button--active')
 })()
