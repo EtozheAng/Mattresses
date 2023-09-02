@@ -84,15 +84,11 @@ h6 {
   padding: 0;
 }
 
-// a,
-// a:link,
-// a:visited {
-//   text-decoration: none;
-// }
-
-// a:hover {
-//   text-decoration: none;
-// }
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 ul,
 ul li {

@@ -1,0 +1,43 @@
+<div class="modal">
+  <div class="modal__content">
+    @@include('../_sprite.html',{'class':'modal__close','id':'sprite--close-modal'})
+    <h2 class="modal__title">Связаться с нами</h2>
+    <form id="subscriptionFormId" class="modal__form">
+      <input
+        class="modal__input animate__animated"
+        type="text"
+        name="name"
+        placeholder="Ваше имя"
+        autocomplete="off"
+      />
+      <input
+        class="modal__input animate__animated"
+        type="number"
+        name="phone"
+        value="+7"
+        placeholder="+7"
+        autocomplete="off"
+      />
+      <input
+        type="email"
+        class="modal__input animate__animated"
+        name="email"
+        placeholder="E-mail"
+        autocomplete="off"
+      />
+      <label class="custom-checkbox">
+        <input class="custom-checkbox__input" type="checkbox" name="checkbox" />
+        <div
+          class="custom-checkbox__box --svg__checkbox animate__animated"
+        ></div>
+        <a class="custom-checkbox__link link" href="/">
+          Согласен с
+          <span class="custom-checkbox__underline"
+            >политикой конфиденциальности</span
+          ></a
+        >
+      </label>
+      <button class="modal__submit" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>

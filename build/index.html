@@ -45,12 +45,12 @@
 </a>
 
     <div class="header-main__tools flex">
-      <a href="tel:+74957872747" class="header-main__tools-button">
+      <button class="header-main__tools-button main__tools-call">
         <svg class="header-main__tools-svg">
   <use xlink:href="img/sprite.svg#sprite--phone" stroke="#235984" stroke-width="2"  />
 </svg>
 
-      </a>
+      </button>
       <button class="header-main__tools-button">
         <svg class="header-main__tools-svg">
   <use xlink:href="img/sprite.svg#sprite--cart" stroke="#235984" stroke-width="2"  />
@@ -338,7 +338,9 @@
   <div class="container">
     <div class="content-wrapper">
       <div class="mattress-promo animate__animated animate__fadeIn">
-  <div class="mattress-promo__box animate__animated animate__fadeInLeft">
+  <div
+    class="mattress-promo__box flex --dir-col animate__animated animate__fadeInLeft"
+  >
     <h1 class="mattress-promo__title">
       ЛУЧШИЕ МАТРАСЫ<br />
       ДЛЯ ВАШЕГО КОМФОРТА
@@ -411,6 +413,61 @@
     </div>
   </div>
 </section>
+
+    <div class="modal">
+  <div class="modal__content">
+    <svg class="modal__close">
+  <use xlink:href="img/sprite.svg#sprite--close-modal" stroke="#235984" stroke-width="2"  />
+</svg>
+
+    <h2 class="modal__title">Связаться с нами</h2>
+    <form id="subscriptionFormId" class="modal__form">
+      <input
+        class="modal__input animate__animated"
+        type="text"
+        name="name"
+        placeholder="Ваше имя"
+        autocomplete="off"
+      />
+      <input
+        class="modal__input animate__animated"
+        type="number"
+        name="phone"
+        value="+7"
+        placeholder="+7"
+        autocomplete="off"
+      />
+      <input
+        type="email"
+        class="modal__input animate__animated"
+        name="email"
+        placeholder="E-mail"
+        autocomplete="off"
+      />
+      <label class="custom-checkbox">
+        <input class="custom-checkbox__input" type="checkbox" name="checkbox" />
+        <div
+          class="custom-checkbox__box --svg__checkbox animate__animated"
+        ></div>
+        <a class="custom-checkbox__link link" href="/">
+          Согласен с
+          <span class="custom-checkbox__underline"
+            >политикой конфиденциальности</span
+          ></a
+        >
+      </label>
+      <button class="modal__submit" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+
+    <div class="thanks">
+  <div class="thanks__content">
+    <h2 class="thanks__title">спасибо!<br />Заявка отправлена успешно</h2>
+    <p class="thanks__text">Наши менеджеры свяжутся с Вами в ближайшее время</p>
+    <button class="thanks__button">Хорошо</button>
+  </div>
+</div>
 
   </main>
 	<footer class="footer"></footer>

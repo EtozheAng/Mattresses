@@ -24,3 +24,12 @@ function buttonClose(classButton, className, removeName) {
     document.body.classList.remove('body-lock')
   })
 }
+function closeModalWindow(modalName, modalAktiveClass) {
+  const modal = document.querySelector(`.${modalName}`)
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.classList.remove(modalAktiveClass)
+      document.body.classList.remove('body-lock')
+    }
+  })
+}
