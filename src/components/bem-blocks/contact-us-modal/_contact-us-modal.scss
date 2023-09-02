@@ -1,6 +1,7 @@
 .modal {
+  position: fixed;
   opacity: 0;
-  z-index: 15;
+  z-index: -1;
   left: 0;
   top: 0;
   width: 100%;
@@ -63,8 +64,8 @@
     line-height: 147.3%;
   }
   &--active {
-    position: fixed;
     opacity: 1;
+    z-index: 15;
   }
 }
 .custom-checkbox {
