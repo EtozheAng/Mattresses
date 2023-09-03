@@ -1,0 +1,135 @@
+.product-card {
+  position: inherit;
+  max-width: 390px;
+  border-radius: 20px;
+  background: var(--color-background);
+  &__image {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  &__favorite-button {
+    @include bg;
+    @include no-btn;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s ease;
+    &:active {
+      filter: hue-rotate(130deg);
+      transform: scale(0.9);
+    }
+    &::after {
+      @include bg;
+      content: attr(data-tooltip);
+      position: absolute;
+      top: 100%;
+      right: -21px;
+      width: 163px;
+      height: 35.5px;
+      opacity: 0;
+      transition: opacity 0.5s;
+      padding: 7px 8px;
+      color: #5b5b5b;
+      font-family: 'TT Norms Pro';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      filter: drop-shadow(
+        0px 3.4693877696990967px 13.010204315185547px rgba(158, 158, 158, 0.25)
+      );
+    }
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+  &__content {
+    padding: 16px 23px 7px 23px;
+  }
+  &__price-group {
+    gap: 14px;
+  }
+  &__price-discount {
+    color: #1e1e1e;
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 147.3%;
+    text-transform: uppercase;
+  }
+  &__price-original {
+    color: var(--color-grey);
+    font-family: 'Comfortaa';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 147.3%;
+    text-decoration: line-through;
+    text-transform: uppercase;
+  }
+  &__discount {
+    color: #fff;
+    text-align: center;
+    width: 79px;
+    padding-top: 6px;
+    border-radius: 20px;
+    background: var(--color-secondary);
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 147.3%;
+  }
+  &__name {
+    color: #5b5b5b;
+    font-family: 'TT Norms Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 13px;
+  }
+  &__buy-btn {
+    width: 100%;
+    max-width: 351px;
+    color: var(--color-basic);
+    font-family: 'TT Norms Pro';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 147.3%;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: 1.42px solid var(--color-basic);
+    transition: all 0.5s ease;
+    &:hover {
+      color: #e9eff3;
+      background: var(--color-basic);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .product-card {
+    &__discount {
+      width: 60px;
+      padding-top: 3px;
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-card {
+    &__name,
+    &__price-discount,
+    &__price-original {
+      font-size: 16px;
+    }
+    &__buy-btn {
+      font-size: 22px;
+      padding: 12px 0;
+    }
+  }
+}

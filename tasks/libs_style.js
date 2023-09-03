@@ -1,4 +1,7 @@
-const plugins = ['./node_modules/animate.css/animate.min.css']
+const plugins = [
+  './node_modules/animate.css/animate.min.css',
+  './node_modules/swiper/swiper-bundle.min.css',
+]
 
 const { src, dest } = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
