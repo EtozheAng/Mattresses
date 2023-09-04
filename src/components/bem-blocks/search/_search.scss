@@ -12,7 +12,7 @@
     font-size: 20px;
     border: none;
     &::placeholder {
-      color: #191919;
+      color: var(--color-blackLite);
     }
   }
   &__submit {

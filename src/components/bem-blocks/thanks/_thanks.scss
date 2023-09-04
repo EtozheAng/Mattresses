@@ -20,7 +20,7 @@
     border-radius: 10px;
   }
   &__title {
-    color: #191919;
+    color: var(--color-blackLite);
     text-align: center;
     font-family: 'TT Norms Pro';
     font-size: 36px;
@@ -31,7 +31,7 @@
   }
   &__text {
     max-width: 359px;
-    color: #5b5b5b;
+    color: var(--color-text);
     text-align: center;
     font-family: 'TT Norms Pro';
     font-size: 22px;

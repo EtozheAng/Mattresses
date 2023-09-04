@@ -32,7 +32,7 @@
       opacity: 0;
       transition: opacity 0.5s;
       padding: 7px 8px;
-      color: #5b5b5b;
+      color: var(--color-text);
       font-family: 'TT Norms Pro';
       font-weight: 400;
       font-size: 14px;
@@ -83,7 +83,7 @@
     line-height: 147.3%;
   }
   &__name {
-    color: #5b5b5b;
+    color: var(--color-text);
     font-family: 'TT Norms Pro';
     font-weight: 400;
     font-size: 18px;

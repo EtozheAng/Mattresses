@@ -25,6 +25,9 @@ $button-small: 100px;
     line-height: 163.8%;
     margin-bottom: 58px;
   }
+  &__image {
+    border-radius: 10px;
+  }
   &__button {
     position: absolute;
     z-index: 2;
