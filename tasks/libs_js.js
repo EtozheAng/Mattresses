@@ -2,6 +2,7 @@ const plugins = [
   './node_modules/wowjs/dist/wow.min.js',
   './node_modules/graph-tabs/dist/graph-tabs.min.js',
   './node_modules/swiper/swiper-bundle.min.js',
+  './node_modules/accordion-js/dist/accordion.min.js',
 ]
 const { src, dest } = require('gulp')
 const uglify = require('gulp-uglify-es').default

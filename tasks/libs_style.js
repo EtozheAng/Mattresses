@@ -1,6 +1,7 @@
 const plugins = [
   './node_modules/animate.css/animate.min.css',
   './node_modules/swiper/swiper-bundle.min.css',
+  './node_modules/accordion-js/dist/accordion.min.css',
 ]
 
 const { src, dest } = require('gulp')

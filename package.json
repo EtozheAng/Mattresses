@@ -44,6 +44,7 @@
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
+    "accordion-js": "^3.3.4",
     "animate.css": "^4.1.1",
     "graph-tabs": "^1.0.2",
     "sass": "^1.56.0",

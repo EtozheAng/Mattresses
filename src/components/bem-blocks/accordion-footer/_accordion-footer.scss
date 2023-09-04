@@ -1,0 +1,15 @@
+.ac .ac-trigger {
+  color: var(--color-blackPearl);
+  font-family: 'TT Norms Pro';
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+.accordion-container {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .accordion-container {
+    display: block;
+  }
+}
