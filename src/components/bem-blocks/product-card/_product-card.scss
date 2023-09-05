@@ -5,7 +5,12 @@
   background: var(--color-background);
   &__image {
     width: 100%;
+    height: 100%;
     border-radius: 10px 10px 0px 0px;
+  }
+  &__link {
+    display: inline-block;
+    height: 334px;
   }
   &__favorite-button {
     @include bg;
@@ -103,7 +108,7 @@
     border: 1.42px solid var(--color-basic);
     transition: all 0.5s ease;
     &:hover {
-      color: #e9eff3;
+      color: var(--color-background);
       background: var(--color-basic);
     }
     &:active {
