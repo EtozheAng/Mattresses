@@ -6,7 +6,7 @@
     position: relative;
     width: 40px;
     height: 40px;
-    background: #fff;
+    background: transparent;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -47,7 +47,9 @@
     padding: 4px 10px;
     z-index: 10;
   }
-  @media (max-width: 1400px) {
+}
+@media screen and (max-width: 1400px) {
+  .header-mobile {
     display: block;
     left: 0;
     position: fixed;
@@ -55,5 +57,10 @@
     top: 0;
     width: 100%;
     z-index: 100;
+  }
+  .logo {
+    &__svg {
+      height: 42px;
+    }
   }
 }
