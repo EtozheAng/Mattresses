@@ -1,0 +1,5 @@
+submitForm('orderForm', 'modal-order')
+openModal('product-card__buy-btn', 'modal-order')
+closeModalWindow('modal-order', 'modal--active')
+buttonClose('modal__close', 'modal-order', 'modal--active')
+checkboxToggle('modal-order')

@@ -56,6 +56,11 @@
     z-index: 15;
   }
 }
+.thanks-order {
+  .thanks__content {
+    padding: 64px 120px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .thanks {
     &__title {
