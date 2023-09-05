@@ -79,6 +79,13 @@ $button-small: 100px;
   @media screen and (max-width: 1400px) {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    &__title {
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
     &__image {
       display: none;
     }
