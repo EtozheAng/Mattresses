@@ -37,9 +37,42 @@
   &--show {
     height: 100vh;
     pointer-events: all;
-    background: #e9eff3;
+    background: var(--color-background);
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .sidebar {
+    padding: 40px 20px;
+    &__link {
+      padding: 20px;
+      font-size: 24px;
+    }
+    &__navlinks {
+      a {
+        padding: 20px;
+        font-size: 24px;
+      }
+    }
+  }
+  .search {
+    max-width: 380px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .sidebar {
+    padding: 20px 10px;
+    &__link {
+      padding: 10px;
+      font-size: 18px;
+    }
+    &__navlinks {
+      a {
+        padding: 10px;
+        font-size: 18px;
+      }
+    }
   }
 }
