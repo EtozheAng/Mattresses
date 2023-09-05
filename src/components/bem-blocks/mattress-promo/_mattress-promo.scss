@@ -132,17 +132,8 @@ $button-small: 100px;
       font-size: 14px;
       margin-bottom: 25px;
     }
-    &__button {
-      font-size: 14px;
-      width: $button-small;
-      height: $button-small;
-      padding: 30px 0;
-    }
-
-    &__circle {
-      width: $button-small;
-      height: $button-small;
-      left: 14px;
+    &__button-group {
+      display: none;
     }
   }
 }
