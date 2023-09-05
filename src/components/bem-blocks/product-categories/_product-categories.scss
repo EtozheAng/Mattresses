@@ -110,14 +110,12 @@
 }
 @media screen and (max-width: 480px) {
   .product-category {
-    &__item {
+    &::before {
+      top: 50%;
+    }
+    &:hover {
       &::before {
         top: 50%;
-      }
-      &:hover {
-        &::before {
-          top: 50%;
-        }
       }
     }
     &__title {
