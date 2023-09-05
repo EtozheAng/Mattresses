@@ -5,12 +5,12 @@
 
 ## Ссылка на сайт
 
-Вы можете посетить сайт по следующей ссылке: [Click](https://etozheang.github.io/mattresse/)
+Вы можете посетить сайт по следующей ссылке: [Click](https://etozheang.github.io/Mattresses/)
 
 ## Как запустить проект у себя на компьютере
 
 Если вы хотите запустить проект у себя на компьютере, выполните следующие действия:
-1. Скачайте проект на свой компьютер с помощью команды в терминале: [git clone https://github.com/username/repo.git](https://github.com/etozheang/mattresse.git`)
+1. Скачайте проект на свой компьютер с помощью команды в терминале: [git clone https://github.com/username/repo.git](https://github.com/etozheang/Mattresses.git`)
 2. Установите зависимости, используя npm: npm install
 3. Запустите проект с помощью Gulp: gulp
 
