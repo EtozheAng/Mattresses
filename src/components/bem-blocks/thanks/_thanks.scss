@@ -81,6 +81,11 @@
       font-size: 28px;
     }
   }
+  .thanks-order {
+    .thanks__content {
+      padding: 40px 15px;
+    }
+  }
 }
 @media screen and (max-width: 480px) {
   .thanks {
@@ -98,6 +103,11 @@
     &__button {
       font-size: 20px;
       height: 50px;
+    }
+  }
+  .thanks-order {
+    .thanks__content {
+      padding: 25px 15px;
     }
   }
 }
