@@ -2,8 +2,6 @@
   height: 0;
   padding: 20px 10px;
   opacity: 0;
-  visibility: hidden;
-  overflow: hidden auto;
   transform: translateX(-100%);
   transition: all 0.3s ease;
   &__content {
@@ -36,10 +34,8 @@
   }
   &--show {
     height: 100vh;
-    pointer-events: all;
     background: var(--color-background);
     opacity: 1;
-    visibility: visible;
     transform: translateX(0);
   }
 }
