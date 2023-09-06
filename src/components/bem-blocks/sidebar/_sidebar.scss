@@ -45,7 +45,6 @@
 }
 @media screen and (max-width: 1400px) {
   .sidebar {
-    padding: 40px 20px;
     &__link {
       padding: 20px;
       font-size: 24px;
@@ -59,6 +58,25 @@
   }
   .search {
     max-width: 380px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    &__link {
+      padding: 18px 0;
+      font-size: 22px;
+    }
+    &__navlinks {
+      a {
+        padding: 18px 0;
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .search {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 375px) {
