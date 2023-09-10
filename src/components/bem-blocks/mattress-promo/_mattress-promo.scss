@@ -27,6 +27,7 @@ $button-small: 100px;
   }
   &__image {
     border-radius: 10px;
+    clip-path: ellipse(1059px 763px at 130% 50%);
   }
   &__button {
     position: absolute;
